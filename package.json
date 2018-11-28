@@ -1,0 +1,38 @@
+{
+  "name": "clock-in-out",
+  "version": "0.1.0",
+  "description": "A clock-in/out system using nestJS, PostgreSQL, TypeORM, Angular, Arduino, RxJS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Caballerog/clock-in-out.git"
+  },
+  "keywords": [
+    "clock-in/out",
+    "nestJS",
+    "PostgreSQL",
+    "TypeORM",
+    "Angular",
+    "Arduino",
+    "RxJS"
+  ],
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "author": "Carlos Caballero",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Caballerog/clock-in-out/issues"
+  },
+  "homepage": "https://github.com/Caballerog/clock-in-out#readme",
+  "devDependencies": {
+    "@commitlint/config-angular": "^7.1.2",
+    "commitlint": "^7.2.1",
+    "husky": "^1.2.0"
+  }
+}

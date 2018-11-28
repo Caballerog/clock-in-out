@@ -31,6 +31,7 @@
   },
   "homepage": "https://github.com/Caballerog/clock-in-out#readme",
   "devDependencies": {
+    "@commitlint/config-angular": "^7.1.2",
     "commitlint": "^7.2.1",
     "husky": "^1.2.0"
   }

@@ -8,8 +8,8 @@ The idea of this project is to develop a clock-in/out system using Arduino as NF
 
 You can find more information in the following links:
 
-- <a href="https://carloscaballero.io/part-1-clock-in-out-system-diagram/)" target="_blank">Part 1. Clock-in/out System: Diagram</a>
-- <a href="https://carloscaballero.io/part-2-clock-in-out-system-basic-backend/)" target="_blank">Part 2. Clock-in/out System: Basic backend - AuthModule</a>
+- <a href="https://carloscaballero.io/part-1-clock-in-out-system-diagram/" target="_blank">Part 1. Clock-in/out System: Diagram</a>
+- <a href="https://carloscaballero.io/part-2-clock-in-out-system-basic-backend/" target="_blank">Part 2. Clock-in/out System: Basic backend - AuthModule</a>
 
 - Part 3. Clock-in/out System: Basic backend - UsersModule.
 - Part 4. Clock-in/out System: Basic backend- AppModule.

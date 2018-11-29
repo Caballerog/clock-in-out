@@ -13,14 +13,14 @@ import {
   OUTPUT,
 } from './constants/auth.constants';
 import * as moment from 'moment';
-/* import { User } from '../users/entities/user.entity'; */
+import { User } from '../users/entities/user.entity';
 @Injectable()
 export class AuthService {
   constructor(
     @Inject(AUTH_REPOSITORY_TOKEN)
     private readonly authRepository: Repository<AuthEntity>,
     @Inject(USER_REPOSITORY_TOKEN)
-    private readonly userRepository: Repository<any/* User */>,
+    private readonly userRepository: Repository<User>,
   ) {}
 
   async authIn(auth: AuthDto): Promise<AuthResponseDto> {
@@ -39,7 +39,7 @@ export class AuthService {
       return { status: STATUS_CODE_RESPONSE.KO, msg: 'Error en la salida' };
     }
   }
-  private async saveTicketing(auth: AuthDto): Promise<any/* User */> {
+  private async saveTicketing(auth: AuthDto): Promise<User> {
     const user = await this.userRepository.findOne({
       where: {
         key: auth.key,

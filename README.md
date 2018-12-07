@@ -10,8 +10,7 @@ You can find more information in the following links:
 
 - <a href="https://carloscaballero.io/part-1-clock-in-out-system-diagram/" target="_blank">Part 1. Clock-in/out System: Diagram</a>
 - <a href="https://carloscaballero.io/part-2-clock-in-out-system-basic-backend/" target="_blank">Part 2. Clock-in/out System: Basic backend - AuthModule</a>
-
-- Part 3. Clock-in/out System: Basic backend - UsersModule.
+- <a href="https://carloscaballero.io/part-3-clock-in-out-system-basic-backend-ii-usersmodule/" target="_blank">Part 3. Clock-in/out System: Basic backend - UsersModule.</a>
 - Part 4. Clock-in/out System: Basic backend- AppModule.
 - Part 5. Clock-in/out System: Basic frontend.
 - Part 6. Clock-in/out System: Arduino.

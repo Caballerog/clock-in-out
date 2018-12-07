@@ -5,8 +5,8 @@ import {
   DB_CONNECTION_TOKEN,
   USER_REPOSITORY_TOKEN,
 } from 'common/config/database.tokens.constants';
-/* import { User } from '../../users/entities/user.entity';
- */
+import { User } from '../../users/entities/user.entity';
+
 export const AuthProviders = [
   {
     provide: AUTH_REPOSITORY_TOKEN,
@@ -16,7 +16,7 @@ export const AuthProviders = [
   },
   {
     provide: USER_REPOSITORY_TOKEN,
-    useFactory: (connection: Connection) => connection.getRepository(AuthEntity)/* connection.getRepository(User) */,
+    useFactory: (connection: Connection) => connection.getRepository(User),
     inject: [DB_CONNECTION_TOKEN],
   },
 ];

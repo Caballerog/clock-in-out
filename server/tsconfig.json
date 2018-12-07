@@ -13,6 +13,6 @@
     "outDir": "./dist",
     "baseUrl": "./src"
   },
-  "include": ["src/**/*"],
+  "include": ["src/**/*", "../commitlint.config.js"],
   "exclude": ["node_modules", "**/*.spec.ts"]
 }

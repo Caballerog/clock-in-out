@@ -1,5 +1,5 @@
 import { Injectable, Inject } from '@nestjs/common';
-import { Repository, getRepository } from 'typeorm';
+import { Repository } from 'typeorm';
 import {
   AUTH_REPOSITORY_TOKEN,
   USER_REPOSITORY_TOKEN,

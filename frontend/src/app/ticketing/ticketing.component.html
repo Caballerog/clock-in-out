@@ -1,0 +1,75 @@
+<div>
+  <span class="center">Absent</span>
+  <span class="right"> {{ timestamp$ | async }}</span>
+</div>
+<div style="display:flex">
+  <mat-table [dataSource]="middle((usersAbsent$ | async), 1)">
+
+
+    <ng-container matColumnDef="name">
+      <mat-header-cell *matHeaderCellDef> Employee </mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{element.name}} </mat-cell>
+    </ng-container>
+
+
+    <ng-container matColumnDef="room">
+      <mat-header-cell *matHeaderCellDef> Room </mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{element.schedule[0].room}} </mat-cell>
+    </ng-container>
+
+    <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+    <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+  </mat-table>
+
+  <mat-table [dataSource]="middle((usersAbsent$ | async), 2)">
+    <ng-container matColumnDef="name">
+      <mat-header-cell *matHeaderCellDef> Name </mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{element.name}} </mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="room">
+      <mat-header-cell *matHeaderCellDef> Room </mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{element.schedule[0].room}} </mat-cell>
+    </ng-container>
+
+    <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+    <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+  </mat-table>
+</div>
+
+
+<span class="center">PRESENT</span>
+<div style="display:flex">
+  <mat-table [dataSource]="middle((usersPresent$ | async), 1)">
+
+    <ng-container matColumnDef="name">
+      <mat-header-cell *matHeaderCellDef> Employee </mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{element.name}} </mat-cell>
+    </ng-container>
+
+
+    <ng-container matColumnDef="room">
+      <mat-header-cell *matHeaderCellDef> Room </mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{element.schedule[0].room}} </mat-cell>
+    </ng-container>
+
+    <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+    <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+  </mat-table>
+
+  <mat-table [dataSource]="middle((usersPresent$ | async), 2)">
+
+    <ng-container matColumnDef="name">
+      <mat-header-cell *matHeaderCellDef> EMPLOYEE </mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{element.name}} </mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="room">
+      <mat-header-cell *matHeaderCellDef> Room </mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{element.schedule[0].room}} </mat-cell>
+    </ng-container>
+
+    <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+    <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+  </mat-table>
+</div>

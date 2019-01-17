@@ -1,0 +1,31 @@
+mat-table {
+  width: 49.5%;
+  border-right: 1px solid black;
+}
+mat-row {
+  min-height: 24px;
+}
+.center {
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  text-align: center;
+  text-transform: uppercase;
+}
+.right {
+  float: right;
+}
+
+table {
+  width: 100%;
+}
+
+.mat-form-field {
+  font-size: 14px;
+  width: 100%;
+}
+
+td,
+th {
+  width: 25%;
+}

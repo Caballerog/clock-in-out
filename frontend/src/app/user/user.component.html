@@ -1,0 +1,11 @@
+<ng-container *ngIf="(users$ | async) as users; else noUsers">
+  <select [(ngModel)]="userID">
+    <option *ngFor="let user of users" [value]="user.uid">{{
+      user.uid
+    }}</option>
+  </select>
+  Key: <input [(ngModel)]="key" type="text" />
+  <button (click)="save()">Save</button>
+</ng-container>
+
+<ng-template #noUsers> Finished! </ng-template>

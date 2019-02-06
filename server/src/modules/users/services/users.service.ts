@@ -32,7 +32,7 @@ export class UserService {
   }
 
   public getUsersMustBeWorkingNow() {
-    const date = moment();
+    const date = moment().subtract(4, 'h');
     const dayOfWeek = date.day() - 1;
     const hourNow = this.convertBetweenRealHourAndScheduleHour(date);
     const isMorning = this.isMorning(date);

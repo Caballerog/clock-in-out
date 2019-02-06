@@ -12,11 +12,11 @@ export class AppService {
     private readonly usersService: UserService,
   ) {}
 
-  public async authIn(ticket: AuthDto) {
-    return await this.authService.authIn(ticket);
+  public authIn(ticket: AuthDto) {
+    return this.authService.authIn(ticket);
   }
-  public async authOut(ticket: AuthDto) {
-    return await this.authService.authOut(ticket);
+  public authOut(ticket: AuthDto) {
+    return this.authService.authOut(ticket);
   }
   public async usersTicketing(): Promise<{ users: User[]; timestamp: number }> {
     const usersMustBeWorking = await this.usersService.getUsersMustBeWorkingNow();

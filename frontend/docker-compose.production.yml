@@ -1,0 +1,15 @@
+version: '3.1'
+
+services:
+  clock-frontend:
+    image: 'ccaballerog/clock-frontend'
+    build: '.'
+    restart: always
+    ports:
+      - 8181:80
+    networks:
+      - clock-net
+
+networks:
+  clock-net:
+    driver: bridge

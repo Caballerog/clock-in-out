@@ -1,9 +1,9 @@
 import { Injectable } from '@nestjs/common';
-import { AuthService } from 'modules/auth/auth.service';
-import { UserService } from 'modules/users/services/users.service';
-import { AuthDto } from 'modules/auth/dto/auth.dto';
+import { AuthService } from './modules/auth/auth.service';
+import { UserService } from './modules/users/services/users.service';
+import { AuthDto } from './modules/auth/dto/auth.dto';
 import * as moment from 'moment';
-import { User } from 'modules/users/entities/user.entity';
+import { User } from './modules/users/entities/user.entity';
 
 @Injectable()
 export class AppService {

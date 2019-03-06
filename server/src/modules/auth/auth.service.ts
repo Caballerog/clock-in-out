@@ -45,6 +45,11 @@ export class AuthService {
         key: auth.key,
       },
     });
+    /* CAMBIADO POR EL TEST DE AUTH.SERVICE SHOULD RETURN ERROR */
+    if (!user) {
+      throw new Error();
+    }
+    /** */
     await this.authRepository.save({
       ...auth,
       user,

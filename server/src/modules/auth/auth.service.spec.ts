@@ -28,19 +28,14 @@ describe('Auth service', () => {
         {
           provide: AUTH_REPOSITORY_TOKEN,
           useFactory: () => ({
-            find: jest.fn(() => true),
+            findOne: jest.fn(() => true),
             save: jest.fn(() => true),
-            delete: jest.fn(() => true),
-            update: jest.fn(() => true),
           }),
         },
         {
           provide: USER_REPOSITORY_TOKEN,
           useFactory: () => ({
-            find: jest.fn(() => true),
             save: jest.fn(() => true),
-            delete: jest.fn(() => true),
-            update: jest.fn(() => true),
           }),
         },
       ],

@@ -60,7 +60,7 @@ describe('App service', () => {
     });
   });
   describe('usersTicketing', () => {
-    it('should return an object cotaining the users mustbe working list and moment.unix', async () => {
+    it('should return an object cotaining the users must be working list and moment.unix', async () => {
       Date.now = jest.fn(() => {
         const d = new Date(Date.UTC(2017, 10, 10, 8, 25));
         const nd = new Date(d.getTime() + d.getTimezoneOffset() * 60000);

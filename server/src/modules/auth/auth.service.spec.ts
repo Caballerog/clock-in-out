@@ -1,8 +1,6 @@
 import { Test } from '@nestjs/testing';
 import { TestingModule } from '@nestjs/testing/testing-module';
 import { AuthService } from './auth.service';
-/* import * as data from './data.mock'; */
-import { DeepPartial } from 'typeorm';
 import {
   AUTH_REPOSITORY_TOKEN,
   USER_REPOSITORY_TOKEN,

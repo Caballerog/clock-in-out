@@ -9,16 +9,16 @@ export class AppController {
   constructor(private appService: AppService) {}
 
   @Post('in')
-  async authIn(@Body() ticket: AuthDto): Promise<AuthResponseDto> {
-    return await this.appService.authIn(ticket);
+  authIn(@Body() ticket: AuthDto): Promise<AuthResponseDto> {
+    return this.appService.authIn(ticket);
   }
 
   @Post('out')
-  async authOut(@Body() ticket: AuthDto): Promise<AuthResponseDto> {
-    return await this.appService.authOut(ticket);
+  authOut(@Body() ticket: AuthDto): Promise<AuthResponseDto> {
+    return this.appService.authOut(ticket);
   }
   @Get('users')
-  async usersTicketing(): Promise<{ users: User[]; timestamp: number }> {
-    return await this.appService.usersTicketing();
+  usersTicketing(): Promise<{ users: User[]; timestamp: number }> {
+    return this.appService.usersTicketing();
   }
 }

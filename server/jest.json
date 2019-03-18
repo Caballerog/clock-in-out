@@ -1,0 +1,53 @@
+{
+  "moduleFileExtensions": ["ts", "tsx", "js", "json"],
+  "notify": false,
+  "testEnvironment": "node",
+  "transform": {
+    "^.+\\.tsx?$": "ts-jest"
+  },
+  "testRegex": "/src/.*\\.(test|spec).(ts|tsx|js)$",
+  "collectCoverageFrom": [
+    "src/**/*.{js,jsx,tsx,ts}",
+    "!**/docker-volumes/**",
+    "!**/coverage/**",
+    "!**/coverage-e2e/**",
+    "!**/node_modules/**",
+    "!**/vendor/**",
+    "!**/index.ts",
+    "!**/specs/**",
+    "!**/graphql/**",
+    "!**/*.module*.ts",
+    "!**/*.provider*.ts",
+    "!src/server.ts",
+    "!src/**/moment-with-locales.js"
+  ],
+  "coverageReporters": ["json", "lcov"],
+  "coveragePathIgnorePatterns": [
+    "<rootDir>/node_modules",
+    "<rootDir>/src/moment-with-locale.js",
+    "<rootDir>/docker-volumes",
+    "<rootDir>/coverage",
+    "<rootDir>/coverage-e2e",
+    "<rootDir>/src/typings.d.ts"
+  ],
+  "testPathIgnorePatterns": [
+    "<rootDir>/node_modules",
+    "<rootDir>/docker-volumes",
+    "<rootDir>/coverage",
+    "<rootDir>/coverage-e2e",
+    "<rootDir>/e2e"
+  ],
+  "globals": {
+    "ts-jest": {
+      "diagnostics": {
+        "warnOnly": true
+      }
+    }
+  },
+  "moduleNameMapper": {
+    "^@common/(.*)": "<rootDir>/src/common/$1",
+    "^@modules/(.*)": "<rootDir>/src/modules/$1",
+    "^@env/(.*)": "<rootDir>/src/env/$1"
+  },
+  "setupTestFrameworkScriptFile": "<rootDir>/jest.setup.ts"
+}

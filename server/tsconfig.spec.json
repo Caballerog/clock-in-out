@@ -1,7 +1,25 @@
 {
-  "extends": "tsconfig.json",
-  "compilerOptions": {
+  "extends": "../tsconfig.json",
+  /*   "compilerOptions": {
+    "module": "commonjs",
+    "declaration": true,
+    "removeComments": true,
+    "noLib": false,
+    "allowSyntheticDefaultImports": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "target": "es6",
+    "sourceMap": true,
+    "outDir": "./dist",
+    "baseUrl": "./src",
+    "strictNullChecks": false,
+    "allowUnusedLabels": true,
+    "noUnusedLocals": false,
+    "noImplicitAny": false,
+    "noImplicitReturns": false,
+    "noImplicitUseStrict": false,
+    "noUnusedParameters": false,
     "types": ["jest", "node"]
-  },
-  "include": ["**/*.spec.ts", "**/*.d.ts"]
+  }, */
+  "include": ["./**/*.ts", "./**/*.spec.ts"]
 }

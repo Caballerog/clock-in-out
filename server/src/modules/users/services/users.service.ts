@@ -1,6 +1,6 @@
 import { User as UserEntity, User } from '../entities/user.entity';
 import { Injectable, Inject } from '@nestjs/common';
-import { USER_REPOSITORY_TOKEN } from 'common/config/database.tokens.constants';
+import { USER_REPOSITORY_TOKEN } from '../../../common/config/database.tokens.constants';
 import { Repository } from 'typeorm';
 import * as moment from 'moment';
 import {
@@ -73,14 +73,18 @@ export class UserService {
       realHour.isBetween(
         moment(range[0], HOUR_FORMAT),
         moment(range[1], HOUR_FORMAT),
+        'milliseconds',
+        '[]',
       ),
     );
   }
 
   private isMorning(hour: moment.Moment): boolean {
     return hour.isBetween(
-      moment(FIRST_HOUR_MORNING),
-      moment(LAST_HOUR_MORNING),
+      moment(FIRST_HOUR_MORNING, HOUR_FORMAT),
+      moment(LAST_HOUR_MORNING, HOUR_FORMAT),
+      'milliseconds',
+      '[]',
     );
   }
 }

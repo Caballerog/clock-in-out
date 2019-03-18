@@ -45,6 +45,9 @@ export class AuthService {
         key: auth.key,
       },
     });
+    if (!user) {
+      throw new Error();
+    }
     await this.authRepository.save({
       ...auth,
       user,

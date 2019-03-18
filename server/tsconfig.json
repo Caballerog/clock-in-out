@@ -11,8 +11,15 @@
     "target": "es6",
     "sourceMap": true,
     "outDir": "./dist",
-    "baseUrl": "./src"
+    "baseUrl": "./src",
+    "skipLibCheck": true,
+    "strictNullChecks": true,
+    "paths": {
+      "@common/": ["common/"],
+      "@modules/": ["modules/"],
+      "@env/": ["env/"]
+    },
+    "lib": ["es2017", "dom"]
   },
-  "include": ["src/**/*", "../commitlint.config.js"],
-  "exclude": ["node_modules", "**/*.spec.ts"]
+  "exclude": ["node_modules", "dist"]
 }
